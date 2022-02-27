@@ -1,10 +1,21 @@
-input_from_trainee = input("What is red in shona?")
+import platform
+import os
 
-if input_from_trainee == "tsvuku":
-    print ("yoo !!! yooo!!!")
+the_system = platform.system()
+if (the_system == "Windows"):
+    os.system("cls")
 else:
-    print ("Sorry, but the answer is wrong! Ask Tristan, he knows!")
+    os.system("clear")
 
+def ask_vocabulary(question, answer):
+    input_from_trainee = input(question)
+
+    if input_from_trainee == answer:
+        print ("yoo !!! yooo!!!")
+    else:
+        print ("Sorry, but the answer is wrong! Ask Tristan, he knows!")
+
+ask_vocabulary("What is red in shona?", "tsvuku")
 
 input_from_trainee = input("What is white in shona?")
 
