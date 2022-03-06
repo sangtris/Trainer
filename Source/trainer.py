@@ -1,19 +1,28 @@
 import platform
 import os
 
-the_system = platform.system()
-if (the_system == "Windows"):
-    os.system("cls")
-else:
-    os.system("clear")
+def clear_screen():
+    the_system = platform.system()
+    if (the_system == "Windows"):
+        os.system("cls")
+    else:
+        os.system("clear")
+
+def case_insensitive_input(question):
+    value = input(question)
+    value = value.lower()
+    return value
 
 def ask_vocabulary(question, answer):
-    input_from_trainee = input(question)
+    answer = answer.lower()
 
-    if input_from_trainee == answer:
-        print ("yoo !!! yooo!!!")
-    else:
+    input_from_trainee = case_insensitive_input(question)
+
+    while (input_from_trainee != answer):
         print ("Sorry, but the answer is wrong! Ask Tristan, he knows!")
+        input_from_trainee = case_insensitive_input(question)
+
+    print ("yoo !!! yooo!!!")
 
 ask_vocabulary("What is Fish in shona?", "Hove")
 ask_vocabulary("What is Salad in shona?", "Muriwo")
