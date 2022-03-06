@@ -15,25 +15,8 @@ def ask_vocabulary(question, answer):
     else:
         print ("Sorry, but the answer is wrong! Ask Tristan, he knows!")
 
-ask_vocabulary("What is red in shona?", "tsvuku")
-
-input_from_trainee = input("What is white in shona?")
-
-if input_from_trainee == "jena":
-    print ("yoo !!! yooo!!!")
-else:
-    print ("Sorry, but the answer is wrong! Ask Tristan, he knows!")
-
-input_from_trainee = input("What is black in shona?")
-
-if input_from_trainee == "tema":
-    print ("yoo !!! yooo!!!")
-else:
-    print ("Sorry, but the answer is wrong! Ask Tristan, he knows!")
-
-input_from_trainee = input("What is human in shona?")
-
-if input_from_trainee == "munhu":
-    print ("yoo !!! yooo!!!")
-else:
-    print ("Sorry, but the answer is wrong! Ask Tristan, he knows!")
+ask_vocabulary("What is Fish in shona?", "Hove")
+ask_vocabulary("What is Salad in shona?", "Muriwo")
+ask_vocabulary("What is black in shona?", "tema")
+ask_vocabulary("What is human in shona?", "munhu")
+ask_vocabulary("What is Water in shona?", "Mvura")
