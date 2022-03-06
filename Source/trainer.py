@@ -1,11 +1,12 @@
 import platform
 import os
 
-the_system = platform.system()
-if (the_system == "Windows"):
-    os.system("cls")
-else:
-    os.system("clear")
+def clear_screen():
+    the_system = platform.system()
+    if (the_system == "Windows"):
+        os.system("cls")
+    else:
+        os.system("clear")
 
 def ask_vocabulary(question, answer):
     input_from_trainee = input(question)
